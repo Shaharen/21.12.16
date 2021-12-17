@@ -14,12 +14,12 @@ from land
 where landnumber = 23
 
 delete from land
-where landname = 'º¸³Ê½º4'
+where landname = 'ë³´ë„ˆìŠ¤4'
 
 insert into LAND(landname,landnumber)
-values('º¸³Ê½º1', 4)
+values('ë³´ë„ˆìŠ¤', 4)
 
 insert into LAND(landname,landnumber)
-values('º¸³Ê½º4', 27)
+values('ë³´ë„ˆìŠ¤', 27)
 
 
