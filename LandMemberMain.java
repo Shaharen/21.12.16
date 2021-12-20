@@ -10,15 +10,15 @@ public class LandMemberMain {
 
 		LandMemberDAO dao2 = new LandMemberDAO();
 		Scanner sc = new Scanner(System.in);
-		System.out.println("\t\t" + "<<<<  Land WarsÈ¸¿ø°ü¸® ½Ã½ºÅÛ  >>>>");
+		System.out.println("\t\t" + "<<<<  Land WarsíšŒì›ê´€ë¦¬ ì‹œìŠ¤í…œ  >>>>");
 		MP3Player mp3 = new MP3Player();
 		while (true) {
-			System.out.print("\t\t" + "[1]·Î±×ÀÎ [2]È¸¿ø°¡ÀÔ [3]È¸¿ø¸ñ·Ïº¸±â [4]È¸¿øÁ¤º¸¼öÁ¤ [5]È¸¿øÅ»Åğ [6]Á¾·á >>");
+			System.out.print("\t\t" + "[1]ë¡œê·¸ì¸ [2]íšŒì›ê°€ì… [3]íšŒì›ëª©ë¡ë³´ê¸° [4]íšŒì›ì •ë³´ìˆ˜ì • [5]íšŒì›íƒˆí‡´ [6]ì¢…ë£Œ >>");
 			int menu = sc.nextInt();
 
 			if (menu == 1) {
 
-				System.out.println("\t\t" + "<<< ·Î±×ÀÎ >>>");
+				System.out.println("\t\t" + "<<< ë¡œê·¸ì¸ >>>");
 				System.out.print("\t\t" + "ID : ");
 				String id = sc.next();
 				System.out.print("\t\t" + "PASSWORD : ");
@@ -28,8 +28,8 @@ public class LandMemberMain {
 
 				if (nick != null) {
 					while (!id.equals("admin")) {
-						System.out.println("\t\t" + nick + "´Ô È¯¿µÇÕ´Ï´Ù!");
-						// landwars ·Î°í
+						System.out.println("\t\t" + nick + "ë‹˜ í™˜ì˜í•©ë‹ˆë‹¤!");
+						// landwars ë¡œê³ 
 						System.out.println("\r\n"
 					            + "         :::             :::       ::::    :::   :::::::::           :::       :::       :::      :::::::::    :::::::: \r\n"
 					            + "        :+:           :+: :+:     :+:+:   :+:   :+:    :+:          :+:       :+:     :+: :+:    :+:    :+:  :+:    :+: \r\n"
@@ -39,180 +39,195 @@ public class LandMemberMain {
 					            + "    #+#         #+#     #+#   #+#   #+#+#   #+#    #+#           #+#+# #+#+#    #+#     #+#  #+#    #+#  #+#    #+#     \r\n"
 					            + "   ##########  ###     ###   ###    ####   #########             ###   ###     ###     ###   ##    ###   ########       \r\n"
 					            +"\r\n");
-						System.out.println("\t\tLandWars¿¡ ¿À½Å°É È¯¿µÇÕ´Ï´Ù");
+						System.out.println("\t\tLandWarsì— ì˜¤ì‹ ê±¸ í™˜ì˜í•©ë‹ˆë‹¤");
 						while (true) {
-							System.out.print("\t\t[ ½Ã³ª¸®¿À¸¦ º¸½Ã°Ú½À´Ï±î? Y / N ] ");
+							System.out.print("\t\t[ ì‹œë‚˜ë¦¬ì˜¤ë¥¼ ë³´ì‹œê² ìŠµë‹ˆê¹Œ? Y / N ] ");
 							String start = sc.next();
 							if (start.equals("Y") || start.equals("y")) {
-
-								String[] smhrd = { " ", " " };
-								String[] smhrd1 = { "2", "0", "2", "1", " ", "1", "2", "¿ù" };
-								String[] smhrd2 = { "'", "S", "M", "H", "R", "D", " ", "½Å", "¹®", "'", "Áß" };
-								System.out.println();
-								String[] smhrd3 = { "2", "0", "2", "1", " ", "´ë", "ÇÑ", "¹Î", "±¹", " ", "ºÎ", "µ¿", "»ê",
-										" ", "»ç", "¾÷", "½Ç", "ÆĞ", "·Î", " ", "ÀÎ", "ÇØ", " ", "Á¤", "ºÎ", "´Â", " ", "Å«", " ",
-										"°á", "½É", "À»", " ", "ÇÏ", "°Ô", "µÇ", "´Â", "µ¥" };
-
-								String[] smhrd4 = { "½Ç", "¾÷", "ÀÚ", " ", "¹×", " ", "Ãë", "ÁØ", "»ı", " ", "¾à", " ", "5",
-										"6", "¸¸", "¸í", "À¸", "·Î", " ", "´Ã", "¾î", "³ª", "°í", " ", "ÀÖ", "´Â", " ", "Çö", "½Ç",
-										"¿¡", "¼­", " " };
-
-								String[] smhrd5 = { "»ı", "È°", "ÀÌ", " ", "¾î", "·Æ", "°Å", "³ª", " ", "¿î", "ÀÌ", " ", "¾ø",
-										"¾î", " ", "¾Æ", "¹«", "°Í", "µµ", " ", "¸ø", "ÇÏ", "°í", " ", "ÀÖ", "´Â" };
-
-								String[] smhrd6 = { "´É", "·Â", "ÀÖ", "´Â", " ", "»ç", "¶÷", "µé", "ÀÇ", " ", "µ¥", "ÀÌ", "ÅÍ",
-										"¸¦", " ", "¸ğ", "À¸", "°í", " ", "¸ğ", "¾Æ" };
-
-								String[] smhrd7 = { "´Ü", " ", "ÇÑ", "¸í", "¿¡", "°Ô", " ", "±â", "È¸", "¸¦", " ", "ÁÖ", "°Ô",
-										"µÇ", "´Â", "µ¥", ".", ".", "." };
-								System.out.print("\t\t");
-								for (String value : smhrd1) {
-
-									System.out.print(value);
-
-									try {
-										mp3.play("C://music/Å¸ÀÚ.mp3");
+								
+								String text = "2021,  ëŒ€í•œë¯¼êµ­ ë¶€ë™ì‚° ì‚¬ì—… ì‹¤íŒ¨ë¡œ ì¸í•´ ì •ë¶€ëŠ” í° ê²°ì‹¬ì„ í•˜ê²Œ ë˜ëŠ”ë°, ì‹¤ì—…ì ë° ì·¨ì¤€ìƒ ì•½ 56ë§Œëª…ìœ¼ë¡œ ëŠ˜ì–´ë‚˜ê³  ìˆëŠ” í˜„ì‹¤ì—ì„œ ìƒí™œì´ ì–´ë µê±°ë‚˜ ìš´ì´ ì—†ì–´ ì•„ë¬´ê²ƒë„ ëª»í•˜ê³  ìˆëŠ” ëŠ¥ë ¥ ìˆëŠ” ì‚¬ëŒë“¤ì˜ ë°ì´í„°ë¥¼ ëª¨ìœ¼ê³  ëª¨ì•„ ë‹¨, í•œ ëª…ì—ê²Œ ê¸°íšŒë¥¼ ì£¼ê²Œ ë˜ëŠ”ë°...";
+								
+								for(int i= 0 ; i < length.text;i++){
+									System.out.print( text.charAt(i));
+									try{
+										mp3.play("C://music/íƒ€ì.mp3");
 										Thread.sleep(180);
-
-									} catch (InterruptedException e) {
-										// TODO Auto-generated catch block
-										e.printStackTrace();
-
-									}
-								}
-
-								System.out.println();
-								System.out.print("\t\t");
-								mp3.play("C://music/Å¸ÀÚ¼Ò¸®.mp3");
-								for (String value : smhrd2) {
-									System.out.print(value);
-
-									try {
-										Thread.sleep(100);
-
-									} catch (InterruptedException e) {
-										// TODO Auto-generated catch block
+									}catch(InterruptedException e){
 										e.printStackTrace();
 									}
 								}
-								if (mp3.isPlaying()) {
 
-									mp3.stop();
-								}
-								System.out.println();
-								System.out.print("\t\t");
-								mp3.play("C://music/Å¸ÀÚ¼Ò¸®.mp3");
-								for (String value : smhrd3) {
-									System.out.print(value);
+// 								String[] smhrd = { " ", " " };
+// 								String[] smhrd1 = { "2", "0", "2", "1", " ", "1", "2", "ì›”" };
+// 								String[] smhrd2 = { "'", "S", "M", "H", "R", "D", " ", "ì‹ ", "ë¬¸", "'", "ì¤‘" };
+// 								System.out.println();
+// 								String[] smhrd3 = { "2", "0", "2", "1", " ", "ëŒ€", "í•œ", "ë¯¼", "êµ­", " ", "ë¶€", "ë™", "ì‚°",
+// 										" ", "ì‚¬", "ì—…", "ì‹¤", "íŒ¨", "ë¡œ", " ", "ì¸", "í•´", " ", "ì •", "ë¶€", "ëŠ”", " ", "í°", " ",
+// 										"ê²°", "ì‹¬", "ì„", " ", "í•˜", "ê²Œ", "ë˜", "ëŠ”", "ë°" };
 
-									try {
-										Thread.sleep(100);
-									} catch (InterruptedException e) {
-										// TODO Auto-generated catch block
-										e.printStackTrace();
-									}
-								}
-								if (mp3.isPlaying()) {
+// 								String[] smhrd4 = { "ì‹¤", "ì—…", "ì", " ", "ë°", " ", "ì·¨", "ì¤€", "ìƒ", " ", "ì•½", " ", "5",
+// 										"6", "ë§Œ", "ëª…", "ìœ¼", "ë¡œ", " ", "ëŠ˜", "ì–´", "ë‚˜", "ê³ ", " ", "ìˆ", "ëŠ”", " ", "í˜„", "ì‹¤",
+// 										"ì—", "ì„œ", " " };
 
-									mp3.stop();
-								}
-								System.out.println();
-								System.out.print("\t\t");
-								mp3.play("C://music/Å¸ÀÚ¼Ò¸®.mp3");
-								for (String value : smhrd4) {
-									System.out.print(value);
+// 								String[] smhrd5 = { "ìƒ", "í™œ", "ì´", " ", "ì–´", "ë µ", "ê±°", "ë‚˜", " ", "ìš´", "ì´", " ", "ì—†",
+// 										"ì–´", " ", "ì•„", "ë¬´", "ê²ƒ", "ë„", " ", "ëª»", "í•˜", "ê³ ", " ", "ìˆ", "ëŠ”" };
 
-									try {
+// 								String[] smhrd6 = { "ëŠ¥", "ë ¥", "ìˆ", "ëŠ”", " ", "ì‚¬", "ëŒ", "ë“¤", "ì˜", " ", "ë°", "ì´", "í„°",
+// 										"ë¥¼", " ", "ëª¨", "ìœ¼", "ê³ ", " ", "ëª¨", "ì•„" };
 
-										Thread.sleep(100);
-									} catch (InterruptedException e) {
-										// TODO Auto-generated catch block
-										e.printStackTrace();
-									}
-								}
-								if (mp3.isPlaying()) {
+// 								String[] smhrd7 = { "ë‹¨", " ", "í•œ", "ëª…", "ì—", "ê²Œ", " ", "ê¸°", "íšŒ", "ë¥¼", " ", "ì£¼", "ê²Œ",
+// 										"ë˜", "ëŠ”", "ë°", ".", ".", "." };
+// 								System.out.print("\t\t");
+// 								for (String value : smhrd1) {
 
-									mp3.stop();
-								}
-								System.out.println();
-								System.out.print("\t\t");
-								mp3.play("C://music/Å¸ÀÚ¼Ò¸®.mp3");
-								for (String value : smhrd5) {
-									System.out.print(value);
+// 									System.out.print(value);
 
-									try {
+// 									try {
+// 										mp3.play("C://music/íƒ€ì.mp3");
+// 										Thread.sleep(180);
 
-										Thread.sleep(100);
+// 									} catch (InterruptedException e) {
+// 										// TODO Auto-generated catch block
+// 										e.printStackTrace();
 
-									} catch (InterruptedException e) {
-										// TODO Auto-generated catch block
-										e.printStackTrace();
-									}
+// 									}
+// 								}
 
-								}
-								if (mp3.isPlaying()) {
+								
+								
+								
+// 								System.out.println();
+// 								System.out.print("\t\t");
+// 								mp3.play("C://music/íƒ€ìì†Œë¦¬.mp3");
+// 								for (String value : smhrd2) {
+// 									System.out.print(value);
 
-									mp3.stop();
-								}
-								System.out.println();
-								System.out.print("\t\t");
-								mp3.play("C://music/Å¸ÀÚ¼Ò¸®.mp3");
-								for (String value : smhrd6) {
-									System.out.print(value);
+// 									try {
+// 										Thread.sleep(100);
 
-									try {
+// 									} catch (InterruptedException e) {
+// 										// TODO Auto-generated catch block
+// 										e.printStackTrace();
+// 									}
+// 								}
+// 								if (mp3.isPlaying()) {
 
-										Thread.sleep(100);
+// 									mp3.stop();
+// 								}
+// 								System.out.println();
+// 								System.out.print("\t\t");
+// 								mp3.play("C://music/íƒ€ìì†Œë¦¬.mp3");
+// 								for (String value : smhrd3) {
+// 									System.out.print(value);
 
-									} catch (InterruptedException e) {
-										// TODO Auto-generated catch block
-										e.printStackTrace();
-									}
+// 									try {
+// 										Thread.sleep(100);
+// 									} catch (InterruptedException e) {
+// 										// TODO Auto-generated catch block
+// 										e.printStackTrace();
+// 									}
+// 								}
+// 								if (mp3.isPlaying()) {
 
-								}
-								if (mp3.isPlaying()) {
+// 									mp3.stop();
+// 								}
+// 								System.out.println();
+// 								System.out.print("\t\t");
+// 								mp3.play("C://music/íƒ€ìì†Œë¦¬.mp3");
+// 								for (String value : smhrd4) {
+// 									System.out.print(value);
 
-									mp3.stop();
-								}
-								System.out.println();
-								System.out.print("\t\t");
-								mp3.play("C://music/Å¸ÀÚ¼Ò¸®.mp3");
-								for (String value : smhrd7) {
-									System.out.print(value);
+// 									try {
 
-									try {
+// 										Thread.sleep(100);
+// 									} catch (InterruptedException e) {
+// 										// TODO Auto-generated catch block
+// 										e.printStackTrace();
+// 									}
+// 								}
+// 								if (mp3.isPlaying()) {
 
-										Thread.sleep(100);
+// 									mp3.stop();
+// 								}
+// 								System.out.println();
+// 								System.out.print("\t\t");
+// 								mp3.play("C://music/íƒ€ìì†Œë¦¬.mp3");
+// 								for (String value : smhrd5) {
+// 									System.out.print(value);
 
-									} catch (InterruptedException e) {
-										// TODO Auto-generated catch block
-										e.printStackTrace();
-									}
-								}
-								if (mp3.isPlaying()) {
+// 									try {
 
-									mp3.stop();
-								}
-								System.out.println();
-								System.out.print("\t\t");
-								mp3.play("C://music/Å¸ÀÚ.mp3");
-								for (String value : smhrd) {
-									System.out.print(value);
+// 										Thread.sleep(100);
 
-									try {
+// 									} catch (InterruptedException e) {
+// 										// TODO Auto-generated catch block
+// 										e.printStackTrace();
+// 									}
 
-										Thread.sleep(100);
-									} catch (InterruptedException e) {
-										// TODO Auto-generated catch block
-										e.printStackTrace();
-									}
-									mp3.play("C://music/¹°¹æ¿ï.mp3");
-								}
-								if (mp3.isPlaying()) {
+// 								}
+// 								if (mp3.isPlaying()) {
 
-									mp3.stop();
-								}
+// 									mp3.stop();
+// 								}
+// 								System.out.println();
+// 								System.out.print("\t\t");
+// 								mp3.play("C://music/íƒ€ìì†Œë¦¬.mp3");
+// 								for (String value : smhrd6) {
+// 									System.out.print(value);
 
+// 									try {
+
+// 										Thread.sleep(100);
+
+// 									} catch (InterruptedException e) {
+// 										// TODO Auto-generated catch block
+// 										e.printStackTrace();
+// 									}
+
+// 								}
+// 								if (mp3.isPlaying()) {
+
+// 									mp3.stop();
+// 								}
+// 								System.out.println();
+// 								System.out.print("\t\t");
+// 								mp3.play("C://music/íƒ€ìì†Œë¦¬.mp3");
+// 								for (String value : smhrd7) {
+// 									System.out.print(value);
+
+// 									try {
+
+// 										Thread.sleep(100);
+
+// 									} catch (InterruptedException e) {
+// 										// TODO Auto-generated catch block
+// 										e.printStackTrace();
+// 									}
+// 								}
+// 								if (mp3.isPlaying()) {
+
+// 									mp3.stop();
+// 								}
+// 								System.out.println();
+// 								System.out.print("\t\t");
+// 								mp3.play("C://music/íƒ€ì.mp3");
+// 								for (String value : smhrd) {
+// 									System.out.print(value);
+
+// 									try {
+
+// 										Thread.sleep(100);
+// 									} catch (InterruptedException e) {
+// 										// TODO Auto-generated catch block
+// 										e.printStackTrace();
+// 									}
+// 									mp3.play("C://music/ë¬¼ë°©ìš¸.mp3");
+// 								}
+// 								if (mp3.isPlaying()) {
+
+// 									mp3.stop();
+// 								}
+								mp3.play("C://music/ë¬¼ë°©ìš¸.mp3");
 								System.out.println();
 								System.out.println();
 								System.out.print("\t\t");
@@ -222,25 +237,25 @@ public class LandMemberMain {
 								System.out.println("To. " + nick);
 								System.out.println();
 								System.out.print("\t\t");
-								System.out.println("ÇÏ·çÇÏ·ç Èûµé°Ô °øºÎÇÏ°í »ç¶÷µé¿¡°Ô Ä¡ÀÌ°í µ·¿¡ Ä¡ÀÌ°í Çö½Ç¿¡ Ä¡ÀÌ°í ÀÖ´Â");
+								System.out.println("í•˜ë£¨í•˜ë£¨ í˜ë“¤ê²Œ ê³µë¶€í•˜ê³  ì‚¬ëŒë“¤ì—ê²Œ ì¹˜ì´ê³  ëˆì— ì¹˜ì´ê³  í˜„ì‹¤ì— ì¹˜ì´ê³  ìˆëŠ”");
 								System.out.print("\t\t");
-								System.out.println(nick + "´Ô ¼ö ¸¹Àº °æÀï ¼Ó¿¡¼­ °í»ıÇÏ°í ÀÖ´Â ¸¹Àº »ç¶÷µéÁß¿¡ ¼±ÅÃ µÇ¼Ì½À´Ï´Ù.");
+								System.out.println(nick + "ë‹˜ ìˆ˜ ë§ì€ ê²½ìŸ ì†ì—ì„œ ê³ ìƒí•˜ê³  ìˆëŠ” ë§ì€ ì‚¬ëŒë“¤ì¤‘ì— ì„ íƒ ë˜ì…¨ìŠµë‹ˆë‹¤.");
 								System.out.print("\t\t");
-								System.out.println("Áö±İ ¼­¿ïÀÇ ºÎµ¿»ê »ç¾÷ ½ÇÆĞ·Î ´ëÇÑ¹Î±¹ ÀçÁ¤¿¡ Å« Å¸°İÀ» ÀÔ¾î °í»ıÇÏ°í ÀÖ½À´Ï´Ù.");
+								System.out.println("ì§€ê¸ˆ ì„œìš¸ì˜ ë¶€ë™ì‚° ì‚¬ì—… ì‹¤íŒ¨ë¡œ ëŒ€í•œë¯¼êµ­ ì¬ì •ì— í° íƒ€ê²©ì„ ì…ì–´ ê³ ìƒí•˜ê³  ìˆìŠµë‹ˆë‹¤.");
 								System.out.print("\t\t");
-								System.out.println("±× ÀÌÀ¯Áß¿¡ ÇÏ³ª°¡ °­³²ÀÇ Á¤Ã¼ ¸ğ¸¦ PBK¶ó´Â °­³²ÀÇ ¸ğµç ¶¥À» °¡Áö°í ÀÖ´Â ¾Ç´öÁöÁÖ°¡ ÀÖ´Âµ¥");
+								System.out.println("ê·¸ ì´ìœ ì¤‘ì— í•˜ë‚˜ê°€ ê°•ë‚¨ì˜ ì •ì²´ ëª¨ë¥¼ PBKë¼ëŠ” ê°•ë‚¨ì˜ ëª¨ë“  ë•…ì„ ê°€ì§€ê³  ìˆëŠ” ì•…ë•ì§€ì£¼ê°€ ìˆëŠ”ë°");
 								System.out.print("\t\t");
-								System.out.println("Áö±İ °°ÀÌ ¾î·Á¿î »óÈ²¿¡¼­ ¼­¿ïÀÇ ¶¥À» ´Ù »ç°¡¸ç ´ëÇÑ¹Î±¹ÀÇ ºÎµ¿»êÀ» ¾îÁö·´È÷°í ÀÖ½À´Ï´Ù.");
+								System.out.println("ì§€ê¸ˆ ê°™ì´ ì–´ë ¤ìš´ ìƒí™©ì—ì„œ ì„œìš¸ì˜ ë•…ì„ ë‹¤ ì‚¬ê°€ë©° ëŒ€í•œë¯¼êµ­ì˜ ë¶€ë™ì‚°ì„ ì–´ì§€ëŸ½íˆê³  ìˆìŠµë‹ˆë‹¤.");
 								System.out.print("\t\t");
-								System.out.println(nick + "´Ô²² ÁË¼ÛÇÑ ¸¶À½ÀÌÁö¸¸ ÀúÈñ¸¦ µµ¿ÍÁÖ½Ã¸é Å« ÈûÀÌ µÉ°Å°°½À´Ï´Ù");
+								System.out.println(nick + "ë‹˜ê»˜ ì£„ì†¡í•œ ë§ˆìŒì´ì§€ë§Œ ì €í¬ë¥¼ ë„ì™€ì£¼ì‹œë©´ í° í˜ì´ ë ê±°ê°™ìŠµë‹ˆë‹¤");
 								System.out.print("\t\t");
-								System.out.println("ÀúÈñ°¡ µ·°ú È¯°æÀ» ´Ù Á¦°øÇØ µå¸±Å×´Ï PBK¸¦ ¸·¾Æ ÁÖ½Ê½Ã¿À.");
+								System.out.println("ì €í¬ê°€ ëˆê³¼ í™˜ê²½ì„ ë‹¤ ì œê³µí•´ ë“œë¦´í…Œë‹ˆ PBKë¥¼ ë§‰ì•„ ì£¼ì‹­ì‹œì˜¤.");
 								System.out.print("\t\t");
-								System.out.println("ºÎ´ã °¡Áö½Ç ÇÊ¿ä ¾øÀÌ ±×³É ¶¥¸¸ ÁöÄÑÁÖ½Ã¸é µË´Ï´Ù");
+								System.out.println("ë¶€ë‹´ ê°€ì§€ì‹¤ í•„ìš” ì—†ì´ ê·¸ëƒ¥ ë•…ë§Œ ì§€ì¼œì£¼ì‹œë©´ ë©ë‹ˆë‹¤");
 								System.out.print("\t\t");
-								System.out.println("ÀúÈñ°¡ ºÎÅ¹ÇÑ °ÍÀ» µé¾î ÁÖ½Å´Ù¸é ÀÌ¶§±îÁöÀÇ Èûµç »îÀ» ¹ş¾î ³¯¼ö ÀÖ°Ô ÇØµå¸®°Ú½À´Ï´Ù.");
+								System.out.println("ì €í¬ê°€ ë¶€íƒí•œ ê²ƒì„ ë“¤ì–´ ì£¼ì‹ ë‹¤ë©´ ì´ë•Œê¹Œì§€ì˜ í˜ë“  ì‚¶ì„ ë²—ì–´ ë‚ ìˆ˜ ìˆê²Œ í•´ë“œë¦¬ê² ìŠµë‹ˆë‹¤.");
 								System.out.print("\t\t");
-								System.out.println("                                           From. ´ëÇÑ¹Î±¹Á¤ºÎ ´ëÅë·É ±èÅÂ°æ");
+								System.out.println("                                           From. ëŒ€í•œë¯¼êµ­ì •ë¶€ ëŒ€í†µë ¹ ê¹€íƒœê²½");
 								System.out.print("\t\t");
 								System.out.println(
 										"===========================================================================");
@@ -248,14 +263,14 @@ public class LandMemberMain {
 								System.out.println();
 								break;
 							} else if (start.equals("N") || start.equals("n")) {
-								System.out.println("\t\t°ÔÀÓÀ» ½ÃÀÛÇÕ´Ï´Ù");
+								System.out.println("\t\tê²Œì„ì„ ì‹œì‘í•©ë‹ˆë‹¤");
 								break;
 							} else {
-								System.out.println("\t\t" + "´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä");
+								System.out.println("\t\t" + "ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”");
 							}
 						}
 
-						System.out.print("\t\t" + "¾Æ¹« Å°³ª ÀÔ·ÂÇÏ½Ã°í ¿£ÅÍ¸¦ ´©¸£½Ã¸é °ÔÀÓÀÌ ½ÃÀÛµË´Ï´Ù.");
+						System.out.print("\t\t" + "ì•„ë¬´ í‚¤ë‚˜ ì…ë ¥í•˜ì‹œê³  ì—”í„°ë¥¼ ëˆ„ë¥´ì‹œë©´ ê²Œì„ì´ ì‹œì‘ë©ë‹ˆë‹¤.");
 						String a = sc.next();
 
 						Random rd = new Random();
@@ -267,29 +282,29 @@ public class LandMemberMain {
 						LandMain inform = new LandMain();
 						Out out = new Out();
 
-						int turnCnt = 0; // ÅÏ Ä«¿îÆ® º¯¼ö
-						int userIsland = 0; // ¹«ÀÎµµ º¯¼ö
+						int turnCnt = 0; // í„´ ì¹´ìš´íŠ¸ ë³€ìˆ˜
+						int userIsland = 0; // ë¬´ì¸ë„ ë³€ìˆ˜
 						int pcIsland = 0;
-						int sw = rd.nextInt(5);// ¼¼¹«¼­ º¯¼ö
-						int userSpace = 0; // ÇÑ°­ Å©·çÁî º¯¼ö
+						int sw = rd.nextInt(5);// ì„¸ë¬´ì„œ ë³€ìˆ˜
+						int userSpace = 0; // í•œê°• í¬ë£¨ì¦ˆ ë³€ìˆ˜
 						int pcSpace = 0;
 
-						System.out.println("\t\t" + "¼±À» °áÁ¤ÇÕ´Ï´Ù.");
+						System.out.println("\t\t" + "ì„ ì„ ê²°ì •í•©ë‹ˆë‹¤.");
 						timeLate(500);
 
 						int userDice = rd.nextInt(6) + 1;
 						int pcDice = rd.nextInt(6) + 1;
-						System.out.println("\t\t" + nick + "ÁÖ»çÀ§ : " + userDice);
+						System.out.println("\t\t" + nick + "ì£¼ì‚¬ìœ„ : " + userDice);
 						timeLate(500);
-						System.out.println("\t\t" + "PBK ÁÖ»çÀ§ : " + pcDice);
+						System.out.println("\t\t" + "PBK ì£¼ì‚¬ìœ„ : " + pcDice);
 						timeLate(500);
 						if (userDice >= pcDice) {
 							turnCnt = 0;
-							System.out.println("\t\t" + nick + "´Ô ¼±ÀÔ´Ï´Ù");
+							System.out.println("\t\t" + nick + "ë‹˜ ì„ ì…ë‹ˆë‹¤");
 							timeLate(500);
 						} else {
 							turnCnt = 1;
-							System.out.println("\t\t" + "PBK ¼±ÀÔ´Ï´Ù");
+							System.out.println("\t\t" + "PBK ì„ ì…ë‹ˆë‹¤");
 							timeLate(500);
 						}
 						System.out.println();
@@ -297,83 +312,83 @@ public class LandMemberMain {
 								"=========================================================================================================");
 
 						while (user.getUserMoney() >= 0 && pc.getPcMoney() >= 0) {
-							sw++; // »çÈ¸ º¹Áö±â±İ Ä«¿îÅÍ Áõ°¡
-							// »ç¿ëÀÚ ÇÃ·¹ÀÌ¾î
+							sw++; // ì‚¬íšŒ ë³µì§€ê¸°ê¸ˆ ì¹´ìš´í„° ì¦ê°€
+							// ì‚¬ìš©ì í”Œë ˆì´ì–´
 							if (turnCnt % 2 == 0) {
 								turnCnt++;
 								while (true) {
 									System.out.println();
-									System.out.println("\t\t" + nick + "´Ô ÅÏÀÔ´Ï´Ù");
+									System.out.println("\t\t" + nick + "ë‹˜ í„´ì…ë‹ˆë‹¤");
 									timeLate(300);
-									// Áö¿ª Á¤º¸ È£Ãâ ¶Ç´Â ´ÙÀÌ½º ¼±ÅÃ
-									System.out.println("\t\t" + "Çàµ¿À» ¼±ÅÃÇÏ¼¼¿ä");
+									// ì§€ì—­ ì •ë³´ í˜¸ì¶œ ë˜ëŠ” ë‹¤ì´ìŠ¤ ì„ íƒ
+									System.out.println("\t\t" + "í–‰ë™ì„ ì„ íƒí•˜ì„¸ìš”");
 									while (true) {
-										System.out.print("\t\t" + "[ 1. ÅÏ ½ÃÀÛ  2. Áö¿ª Á¤º¸ È£Ãâ ] >> ");
+										System.out.print("\t\t" + "[ 1. í„´ ì‹œì‘  2. ì§€ì—­ ì •ë³´ í˜¸ì¶œ ] >> ");
 										String choice = sc.next();
 										if (choice.equals("1")) {
-											System.out.println("\t\t" + "ÅÏÀ» ½ÃÀÛÇÕ´Ï´Ù");
+											System.out.println("\t\t" + "í„´ì„ ì‹œì‘í•©ë‹ˆë‹¤");
 											timeLate(300);
 											System.out.println();
 											break;
 										} else if (choice.equals("2")) {
-											System.out.println("\t\t" + "È£ÃâÇÒ Áö¿ª ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+											System.out.println("\t\t" + "í˜¸ì¶œí•  ì§€ì—­ ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 											timeLate(300);
-											System.out.println("\t\t" + "Áö¿ª ¹øÈ£´Â 0(Ãâ¹ß)ºÎÅÍ 31ÀÔ´Ï´Ù");
+											System.out.println("\t\t" + "ì§€ì—­ ë²ˆí˜¸ëŠ” 0(ì¶œë°œ)ë¶€í„° 31ì…ë‹ˆë‹¤");
 											timeLate(300);
-											System.out.print("\t\t" + "ÀÔ·ÂÇÏ½Å Áö¿ª ¹øÈ£ : ");
+											System.out.print("\t\t" + "ì…ë ¥í•˜ì‹  ì§€ì—­ ë²ˆí˜¸ : ");
 											int landChoice = sc.nextInt();
 											inform.landInform(land, landChoice);
 										} else {
-											System.out.println("\t\t" + "´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä");
+											System.out.println("\t\t" + "ë‹¤ì‹œ ì…ë ¥í•˜ì„¸ìš”");
 										}
 									}
 
-									// ¹«ÀÎµµ ÆĞÅÏ
+									// ë¬´ì¸ë„ íŒ¨í„´
 									if (userIsland > 0) {
 										int islandDice1 = rd.nextInt(6) + 1;
 										int islandDice2 = rd.nextInt(6) + 1;
-										System.out.println("\t\t" + "Ã¹¹øÂ° ÁÖ»çÀ§ : " + islandDice1);
+										System.out.println("\t\t" + "ì²«ë²ˆì§¸ ì£¼ì‚¬ìœ„ : " + islandDice1);
 										timeLate(300);
-										System.out.println("\t\t" + "µÎ¹øÂ° ÁÖ»çÀ§ : " + islandDice2);
+										System.out.println("\t\t" + "ë‘ë²ˆì§¸ ì£¼ì‚¬ìœ„ : " + islandDice2);
 										timeLate(300);
 										if (islandDice1 == islandDice2) {
-											System.out.println("\t\t" + "°Ë»ç°á°ú À½¼ºÀÔ´Ï´Ù");
+											System.out.println("\t\t" + "ê²€ì‚¬ê²°ê³¼ ìŒì„±ì…ë‹ˆë‹¤");
 											timeLate(300);
-											System.out.println("\t\t" + "Åğ¿øÇß½À´Ï´Ù");
+											System.out.println("\t\t" + "í‡´ì›í–ˆìŠµë‹ˆë‹¤");
 											timeLate(300);
 											userIsland = 0;
 											break;
 										} else {
-											System.out.println("\t\t" + "°Ë»ç°¡ ¿Ï·áµÇÁö ¾Ê¾Ò½À´Ï´Ù");
+											System.out.println("\t\t" + "ê²€ì‚¬ê°€ ì™„ë£Œë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤");
 											timeLate(300);
-											System.out.println("\t\t" + "º´¿ø¹ä JMT");
+											System.out.println("\t\t" + "ë³‘ì›ë°¥ JMT");
 											timeLate(300);
 											userIsland--;
-											System.out.println("\t\t" + "³²Àº ÀÔ¿ø ÀÏ¼ö : " + userIsland);
+											System.out.println("\t\t" + "ë‚¨ì€ ì…ì› ì¼ìˆ˜ : " + userIsland);
 											timeLate(300);
 											break;
 										}
 									}
-									// Å©·çÁî (¿ìÁÖ¿©Çà)
+									// í¬ë£¨ì¦ˆ (ìš°ì£¼ì—¬í–‰)
 									if (userSpace > 0) {
 										while (userSpace > 0) {
-											System.out.print("\t\t" + "[ ÀÌµ¿ÇÒ Ä­ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä (1 ~ 31 Ä­) ] >>");
+											System.out.print("\t\t" + "[ ì´ë™í•  ì¹¸ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” (1 ~ 31 ì¹¸) ] >>");
 											int move = sc.nextInt();
 											if (move >= 32 || move <= 0) {
-												System.out.println("\t\t" + "´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+												System.out.println("\t\t" + "ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 											} else {
 												user.space(move);
 												userSpace = 0;
 											}
 										}
 									} else {
-										// ÅÏ ´ÙÀÌ½º
+										// í„´ ë‹¤ì´ìŠ¤
 										user.Dice();
-										mp3.play("C://music/ÁÖ»çÀ§.mp3");
+										mp3.play("C://music/ì£¼ì‚¬ìœ„.mp3");
 										user.DiceSum();
 										user.DiceWhere();
 										pc.DiceWhere();
-										// ÆÇ È£Ãâ
+										// íŒ í˜¸ì¶œ
 //											System.out.println("test : "+land.get(1).getLandOwner()+land.get(2).getLandOwner()+land.get(3).getLandOwner()+land.get(5).getLandOwner()+land.get(6).getLandOwner()+land.get(7).getLandOwner());
 //											System.out.println("userDiceMain"+user.diceWhere);
 //											System.out.println("pcDiceMain"+pc.diceWhere);
@@ -382,10 +397,10 @@ public class LandMemberMain {
 										timeLate(2000);
 
 									}
-									// º¸³Ê½º
+									// ë³´ë„ˆìŠ¤
 									if (user.DiceWhere() == 4 || user.DiceWhere() == 13 || user.DiceWhere() == 22
 											|| user.DiceWhere() == 27) {
-										System.out.println("\t\t" + nick + "´ÔÀÌ º¸³Ê½ºÄ­¿¡ µµÂøÇß½À´Ï´Ù");
+										System.out.println("\t\t" + nick + "ë‹˜ì´ ë³´ë„ˆìŠ¤ì¹¸ì— ë„ì°©í–ˆìŠµë‹ˆë‹¤");
 										timeLate(300);
 										int bonus = rd.nextInt(6) + 1;
 										op.bonus(user, bonus);
@@ -394,21 +409,21 @@ public class LandMemberMain {
 										timeLate(300);
 										break;
 									} else if (user.DiceWhere() % 8 == 0) {
-										// °¢ Æ¯¼öÁö±¸º° È¿°ú È£Ãâ
+										// ê° íŠ¹ìˆ˜ì§€êµ¬ë³„ íš¨ê³¼ í˜¸ì¶œ
 										if (user.DiceWhere() / 8 == 0 || user.DiceWhere() / 8 == 4) {
-											// Ãâ¹ß
-											System.out.println("\t\t" + "Ãâ¹ßÁöÁ¡¿¡ µµÂøÇß½À´Ï´Ù");
+											// ì¶œë°œ
+											System.out.println("\t\t" + "ì¶œë°œì§€ì ì— ë„ì°©í–ˆìŠµë‹ˆë‹¤");
 											timeLate(300);
 											break;
 										} else if (user.DiceWhere() / 8 == 1) {
-											// ¹«ÀÎµµ - 2ÅÏ ½¬±â
-											System.out.println("\t\t" + "ÄÚ·Î³ª°¡ ÀÇ½ÉµÇ¾î º´¿ø¿¡ ÀÔ¿øÇÏ¿´½À´Ï´Ù");
+											// ë¬´ì¸ë„ - 2í„´ ì‰¬ê¸°
+											System.out.println("\t\t" + "ì½”ë¡œë‚˜ê°€ ì˜ì‹¬ë˜ì–´ ë³‘ì›ì— ì…ì›í•˜ì˜€ìŠµë‹ˆë‹¤");
 											timeLate(300);
 											userIsland = 2;
 											break;
 										} else if (user.DiceWhere() / 8 == 2) {
-											// »çÈ¸ º¹Áö±â±İ - ÀÚÃ¼ Ä«¿îÅÍ¿¡ µû¶ó¼­, ¼¼¹«¼­·Î ÀÌ¸§ º¯°æ
-											System.out.println("\t\t" + "¼¼¹«¼­¿¡ µµÂøÇÏ¼Ì½À´Ï´Ù");
+											// ì‚¬íšŒ ë³µì§€ê¸°ê¸ˆ - ìì²´ ì¹´ìš´í„°ì— ë”°ë¼ì„œ, ì„¸ë¬´ì„œë¡œ ì´ë¦„ ë³€ê²½
+											System.out.println("\t\t" + "ì„¸ë¬´ì„œì— ë„ì°©í•˜ì…¨ìŠµë‹ˆë‹¤");
 											timeLate(300);
 											op.sw(user, sw);
 											timeLate(300);
@@ -416,226 +431,226 @@ public class LandMemberMain {
 											timeLate(300);
 											break;
 										} else if (user.DiceWhere() / 8 == 3) {
-											// ¿ìÁÖ¿©Çà - ¿øÇÏ´Â°÷ À§Ä¡
-											System.out.println("\t\t" + "Å©·çÁî¿¡ Å¾½ÂÇÏ¼Ì½À´Ï´Ù");
+											// ìš°ì£¼ì—¬í–‰ - ì›í•˜ëŠ”ê³³ ìœ„ì¹˜
+											System.out.println("\t\t" + "í¬ë£¨ì¦ˆì— íƒ‘ìŠ¹í•˜ì…¨ìŠµë‹ˆë‹¤");
 											timeLate(300);
-											System.out.println("\t\t" + "´ÙÀ½ÅÏ ¿øÇÏ´Â °÷À¸·Î ÀÌµ¿ÇÕ´Ï´Ù");
+											System.out.println("\t\t" + "ë‹¤ìŒí„´ ì›í•˜ëŠ” ê³³ìœ¼ë¡œ ì´ë™í•©ë‹ˆë‹¤");
 											timeLate(300);
 											userSpace = 1;
 											break;
 										}
 
 									} else {
-										// µµ½ÃµµÂø ¾Ë¸²
+										// ë„ì‹œë„ì°© ì•Œë¦¼
 										System.out.println(
-												"\t\t" + land.get(user.DiceWhere()).getLandName() + "¿¡ µµÂø ÇÏ¿´½À´Ï´Ù ");
+												"\t\t" + land.get(user.DiceWhere()).getLandName() + "ì— ë„ì°© í•˜ì˜€ìŠµë‹ˆë‹¤ ");
 										timeLate(300);
-										// ¼ÒÀ¯ ÆÇº° 0 1 2
+										// ì†Œìœ  íŒë³„ 0 1 2
 										if (land.get(user.DiceWhere()).getLandOwner() == 0) {
-											// ¶¥±¸ÀÔ Cnt++
-											System.out.println("\t\t" + "ÇöÀç ¼ÒÀ¯ÀÚ°¡ ¾ø´Â ¶¥ÀÔ´Ï´Ù.");
+											// ë•…êµ¬ì… Cnt++
+											System.out.println("\t\t" + "í˜„ì¬ ì†Œìœ ìê°€ ì—†ëŠ” ë•…ì…ë‹ˆë‹¤.");
 											timeLate(300);
 											while (true) {
-												System.out.print("\t\t" + "[ ¶¥À» ±¸ÀÔÇÏ½Ã°Ú½À´Ï±î? Y / N ] >> ");
+												System.out.print("\t\t" + "[ ë•…ì„ êµ¬ì…í•˜ì‹œê² ìŠµë‹ˆê¹Œ? Y / N ] >> ");
 												String choiceLand = sc.next();
 												if (choiceLand.equals("Y") || choiceLand.equals("y")) {
 													op.userLandBuy(user, land.get(user.DiceWhere()));
 													user.Money();
 													timeLate(300);
-													System.out.println("\t\t" + nick + "´Ô ÅÏÀ» Á¾·áÇÕ´Ï´Ù");
+													System.out.println("\t\t" + nick + "ë‹˜ í„´ì„ ì¢…ë£Œí•©ë‹ˆë‹¤");
 													timeLate(300);
 													land.get(user.DiceWhere()).setLandOwner(1);
 													land.get(user.DiceWhere()).setLandCnt(1);
 													break;
 												} else if (choiceLand.equals("N") || choiceLand.equals("n")) {
-													System.out.println("\t\t" + "¶¥À» ±¸¸ÅÇÏÁö ¾Ê¾Ò½À´Ï´Ù.");
+													System.out.println("\t\t" + "ë•…ì„ êµ¬ë§¤í•˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤.");
 													timeLate(300);
 													user.Money();
 													timeLate(300);
-													System.out.println("\t\t" + nick + "´Ô ÅÏÀ» Á¾·áÇÕ´Ï´Ù");
+													System.out.println("\t\t" + nick + "ë‹˜ í„´ì„ ì¢…ë£Œí•©ë‹ˆë‹¤");
 													timeLate(300);
 													break;
 												} else {
-													System.out.println("\t\t" + "´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä");
+													System.out.println("\t\t" + "ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”");
 												}
 											}
 											break;
 										} else if (land.get(user.DiceWhere()).getLandOwner() == 1) {
-											// ÇÃ·¹ÀÌ¾î¶¥ÀÌ°í, °Ç¼³ ¿©ºÎ (CNT)
-											System.out.println("\t\t" + nick + "´Ô ¶¥ÀÔ´Ï´Ù");
+											// í”Œë ˆì´ì–´ë•…ì´ê³ , ê±´ì„¤ ì—¬ë¶€ (CNT)
+											System.out.println("\t\t" + nick + "ë‹˜ ë•…ì…ë‹ˆë‹¤");
 											timeLate(300);
 											if (land.get(user.DiceWhere()).getLandCnt() == 1) {
-												// ºôµù
+												// ë¹Œë”©
 												while (true) {
-													System.out.println("\t\t" + "ÀÌ Áö¿ªÀÇ ºôµù °¡°İÀº "
-															+ land.get(user.DiceWhere()).getBuilding() + "¾ï ÀÔ´Ï´Ù");
+													System.out.println("\t\t" + "ì´ ì§€ì—­ì˜ ë¹Œë”© ê°€ê²©ì€ "
+															+ land.get(user.DiceWhere()).getBuilding() + "ì–µ ì…ë‹ˆë‹¤");
 													timeLate(300);
 													user.Money();
 													timeLate(300);
-													System.out.print("\t\t" + "[ ºôµùÀ» °Ç¼³ÇÏ½Ã°Ú½À´Ï±î? Y / N ] >> ");
+													System.out.print("\t\t" + "[ ë¹Œë”©ì„ ê±´ì„¤í•˜ì‹œê² ìŠµë‹ˆê¹Œ? Y / N ] >> ");
 													String choiceLand = sc.next();
 													if (choiceLand.equals("Y") || choiceLand.equals("y")) {
 														op.userBuildingBuy(user, land.get(user.DiceWhere()));
 														user.Money();
 														timeLate(300);
 														land.get(user.DiceWhere()).setLandCnt(2);
-														System.out.println("\t\t" + nick + "´Ô ÅÏÀ» Á¾·áÇÕ´Ï´Ù");
+														System.out.println("\t\t" + nick + "ë‹˜ í„´ì„ ì¢…ë£Œí•©ë‹ˆë‹¤");
 														timeLate(300);
 														break;
 													} else if (choiceLand.equals("N") || choiceLand.equals("n")) {
-														System.out.println("\t\t" + "¶¥À» ±¸¸ÅÇÏÁö ¾Ê¾Ò½À´Ï´Ù.");
+														System.out.println("\t\t" + "ë•…ì„ êµ¬ë§¤í•˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤.");
 														timeLate(300);
 														user.Money();
 														timeLate(300);
-														System.out.println("\t\t" + nick + "´Ô ÅÏÀ» Á¾·áÇÕ´Ï´Ù");
+														System.out.println("\t\t" + nick + "ë‹˜ í„´ì„ ì¢…ë£Œí•©ë‹ˆë‹¤");
 														timeLate(300);
 														break;
 													} else {
-														System.out.println("\t\t" + "´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä");
+														System.out.println("\t\t" + "ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”");
 													}
 												}
 												break;
 											} else if (land.get(user.DiceWhere()).getLandCnt() == 2) {
-												// È£ÅÚ
+												// í˜¸í…”
 												while (true) {
-													System.out.println("\t\t" + "ÀÌ Áö¿ªÀÇ È£ÅÚ °¡°İÀº "
-															+ land.get(user.DiceWhere()).getHotel() + "¾ï ÀÔ´Ï´Ù");
+													System.out.println("\t\t" + "ì´ ì§€ì—­ì˜ í˜¸í…” ê°€ê²©ì€ "
+															+ land.get(user.DiceWhere()).getHotel() + "ì–µ ì…ë‹ˆë‹¤");
 													timeLate(300);
 													user.Money();
 													timeLate(300);
-													System.out.print("\t\t" + "[ È£ÅÚÀ» °Ç¼³ÇÏ½Ã°Ú½À´Ï±î? Y / N ] >> ");
+													System.out.print("\t\t" + "[ í˜¸í…”ì„ ê±´ì„¤í•˜ì‹œê² ìŠµë‹ˆê¹Œ? Y / N ] >> ");
 													String choiceLand = sc.next();
 													if (choiceLand.equals("Y") || choiceLand.equals("y")) {
 														op.userHotelBuy(user, land.get(user.DiceWhere()));
 														user.Money();
 														timeLate(300);
 														land.get(user.DiceWhere()).setLandCnt(3);
-														System.out.println("\t\t" + nick + "´Ô ÅÏÀ» Á¾·áÇÕ´Ï´Ù");
+														System.out.println("\t\t" + nick + "ë‹˜ í„´ì„ ì¢…ë£Œí•©ë‹ˆë‹¤");
 														timeLate(300);
 														break;
 													} else if (choiceLand.equals("N") || choiceLand.equals("n")) {
-														System.out.println("\t\t" + "¶¥À» ±¸¸ÅÇÏÁö ¾Ê¾Ò½À´Ï´Ù.");
+														System.out.println("\t\t" + "ë•…ì„ êµ¬ë§¤í•˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤.");
 														timeLate(300);
 														user.Money();
 														timeLate(300);
-														System.out.println("\t\t" + nick + "´Ô ÅÏÀ» Á¾·áÇÕ´Ï´Ù");
+														System.out.println("\t\t" + nick + "ë‹˜ í„´ì„ ì¢…ë£Œí•©ë‹ˆë‹¤");
 														timeLate(300);
 														break;
 													} else {
-														System.out.println("\t\t" + "´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä");
+														System.out.println("\t\t" + "ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”");
 													}
 												}
 												break;
 											} else {
-												// ´õÀÌ»ó °Ç¼³ÇÒ ¶¥ ¾øÀ½
-												System.out.println("\t\t" + "´õÀÌ»ó °Ç¼³ÇÒ °Ç¹°ÀÌ ¾ø½À´Ï´Ù.");
+												// ë”ì´ìƒ ê±´ì„¤í•  ë•… ì—†ìŒ
+												System.out.println("\t\t" + "ë”ì´ìƒ ê±´ì„¤í•  ê±´ë¬¼ì´ ì—†ìŠµë‹ˆë‹¤.");
 												timeLate(300);
-												System.out.println("\t\t" + nick + "´Ô ÅÏÀ» Á¾·áÇÕ´Ï´Ù");
+												System.out.println("\t\t" + nick + "ë‹˜ í„´ì„ ì¢…ë£Œí•©ë‹ˆë‹¤");
 												timeLate(300);
 												break;
 											}
 										} else if (land.get(user.DiceWhere()).getLandOwner() == 2) {
-											// PC¶¥, ÅëÇà·á°è»ê, ÀÎ¼ö¿©ºÎ (OWNER,CNT)
-											System.out.println("\t\t" + "PBKÀÇ ¶¥ÀÔ´Ï´Ù");
+											// PCë•…, í†µí–‰ë£Œê³„ì‚°, ì¸ìˆ˜ì—¬ë¶€ (OWNER,CNT)
+											System.out.println("\t\t" + "PBKì˜ ë•…ì…ë‹ˆë‹¤");
 											timeLate(300);
 											if (land.get(user.DiceWhere()).getLandCnt() == 1) {
-												// ¶¥¸¸ ÀÖÀ½, ¶¥ÅëÇà·á ÁöºÒ, ÀÎ¼ö¿©ºÎ ¹°¾îº¼°Í
-												System.out.println("\t\t" + "ÅëÇà·á´Â "
-														+ land.get(user.DiceWhere()).getPass() + "¾ï ÀÔ´Ï´Ù");
+												// ë•…ë§Œ ìˆìŒ, ë•…í†µí–‰ë£Œ ì§€ë¶ˆ, ì¸ìˆ˜ì—¬ë¶€ ë¬¼ì–´ë³¼ê²ƒ
+												System.out.println("\t\t" + "í†µí–‰ë£ŒëŠ” "
+														+ land.get(user.DiceWhere()).getPass() + "ì–µ ì…ë‹ˆë‹¤");
 												timeLate(300);
 												op.userPass(user, pc, land.get(user.DiceWhere()));
 												user.Money();
 												timeLate(300);
 												while (true) {
-													System.out.println("\t\t" + "ÀÌ Áö¿ªÀÇ ÇöÀç ÀÎ¼ö °¡°İÀº "
-															+ land.get(user.DiceWhere()).getInterceptPrice() + "¾ï ÀÔ´Ï´Ù");
+													System.out.println("\t\t" + "ì´ ì§€ì—­ì˜ í˜„ì¬ ì¸ìˆ˜ ê°€ê²©ì€ "
+															+ land.get(user.DiceWhere()).getInterceptPrice() + "ì–µ ì…ë‹ˆë‹¤");
 													timeLate(300);
-													System.out.print("\t\t" + "[ ÀÎ¼ö ÇÏ½Ã°Ú½À´Ï±î? Y / N ] >> ");
+													System.out.print("\t\t" + "[ ì¸ìˆ˜ í•˜ì‹œê² ìŠµë‹ˆê¹Œ? Y / N ] >> ");
 													String choiceLand = sc.next();
 													if (choiceLand.equals("Y") || choiceLand.equals("y")) {
 														op.userInterceptPrice(user, pc, land.get(user.DiceWhere()));
-														System.out.println("\t\t" + "ÀÎ¼ö¸¦ ¼±ÅÃÇÏ¼Ì½À´Ï´Ù");
+														System.out.println("\t\t" + "ì¸ìˆ˜ë¥¼ ì„ íƒí•˜ì…¨ìŠµë‹ˆë‹¤");
 														timeLate(300);
 														land.get(user.DiceWhere()).setLandOwner(1);
 														user.Money();
 														timeLate(300);
-														System.out.println("\t\t" + nick + "´Ô ÅÏÀ» Á¾·áÇÕ´Ï´Ù");
+														System.out.println("\t\t" + nick + "ë‹˜ í„´ì„ ì¢…ë£Œí•©ë‹ˆë‹¤");
 														timeLate(300);
 														break;
 													} else if (choiceLand.equals("N") || choiceLand.equals("n")) {
-														System.out.println("\t\t" + nick + "´Ô ÅÏÀ» Á¾·áÇÕ´Ï´Ù");
+														System.out.println("\t\t" + nick + "ë‹˜ í„´ì„ ì¢…ë£Œí•©ë‹ˆë‹¤");
 														timeLate(300);
 														break;
 													} else {
-														System.out.println("\t\t" + "´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä");
+														System.out.println("\t\t" + "ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”");
 													}
 												}
 												break;
 											} else if (land.get(user.DiceWhere()).getLandCnt() == 2) {
-												// ºôµù±îÁö ÀÖÀ½, ÅëÇà·á2 ÁöºÒ, ÀÎ¼ö¿©ºÎ
-												System.out.println("\t\t" + "ÅëÇà·á´Â "
-														+ land.get(user.DiceWhere()).getPassBuilding() + "¾ï ÀÔ´Ï´Ù");
+												// ë¹Œë”©ê¹Œì§€ ìˆìŒ, í†µí–‰ë£Œ2 ì§€ë¶ˆ, ì¸ìˆ˜ì—¬ë¶€
+												System.out.println("\t\t" + "í†µí–‰ë£ŒëŠ” "
+														+ land.get(user.DiceWhere()).getPassBuilding() + "ì–µ ì…ë‹ˆë‹¤");
 												timeLate(300);
 												op.userPassBuilding(user, pc, land.get(user.DiceWhere()));
 												user.Money();
 												timeLate(300);
 												while (true) {
-													System.out.println("\t\t" + "ÀÌ Áö¿ªÀÇ ÇöÀç ÀÎ¼ö °¡°İÀº "
+													System.out.println("\t\t" + "ì´ ì§€ì—­ì˜ í˜„ì¬ ì¸ìˆ˜ ê°€ê²©ì€ "
 															+ land.get(user.DiceWhere()).getInterceptPrice2()
-															+ "¾ï ÀÔ´Ï´Ù");
+															+ "ì–µ ì…ë‹ˆë‹¤");
 													timeLate(300);
-													System.out.print("\t\t" + "[ ÀÎ¼ö ÇÏ½Ã°Ú½À´Ï±î? Y / N ] >> ");
+													System.out.print("\t\t" + "[ ì¸ìˆ˜ í•˜ì‹œê² ìŠµë‹ˆê¹Œ? Y / N ] >> ");
 													String choiceLand = sc.next();
 													if (choiceLand.equals("Y") || choiceLand.equals("y")) {
 														op.userInterceptPrice2(user, pc, land.get(user.DiceWhere()));
-														System.out.println("\t\t" + "ÀÎ¼ö¸¦ ¼±ÅÃÇÏ¼Ì½À´Ï´Ù");
+														System.out.println("\t\t" + "ì¸ìˆ˜ë¥¼ ì„ íƒí•˜ì…¨ìŠµë‹ˆë‹¤");
 														timeLate(300);
 														land.get(user.DiceWhere()).setLandOwner(1);
 														user.Money();
 														timeLate(300);
-														System.out.println("\t\t" + nick + "´Ô ÅÏÀ» Á¾·áÇÕ´Ï´Ù");
+														System.out.println("\t\t" + nick + "ë‹˜ í„´ì„ ì¢…ë£Œí•©ë‹ˆë‹¤");
 														timeLate(300);
 														break;
 													} else if (choiceLand.equals("N") || choiceLand.equals("n")) {
-														System.out.println("\t\t" + nick + "´Ô ÅÏÀ» Á¾·áÇÕ´Ï´Ù");
+														System.out.println("\t\t" + nick + "ë‹˜ í„´ì„ ì¢…ë£Œí•©ë‹ˆë‹¤");
 														timeLate(300);
 														break;
 													} else {
-														System.out.println("\t\t" + "´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä");
+														System.out.println("\t\t" + "ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”");
 													}
 												}
 												break;
 											} else {
-												// È£ÅÚ±îÁö ÀÖÀ½, ÅëÇà·á3 ÁöºÒ, ÀÎ¼ö¿©ºÎ
-												System.out.println("\t\t" + "ÅëÇà·á´Â "
-														+ land.get(user.DiceWhere()).getPassHotel() + "¾ï ÀÔ´Ï´Ù");
+												// í˜¸í…”ê¹Œì§€ ìˆìŒ, í†µí–‰ë£Œ3 ì§€ë¶ˆ, ì¸ìˆ˜ì—¬ë¶€
+												System.out.println("\t\t" + "í†µí–‰ë£ŒëŠ” "
+														+ land.get(user.DiceWhere()).getPassHotel() + "ì–µ ì…ë‹ˆë‹¤");
 												timeLate(300);
 												op.userPassHotel(user, pc, land.get(user.DiceWhere()));
 												user.Money();
 												timeLate(300);
 												while (true) {
-													System.out.println("\t\t" + "ÀÌ Áö¿ªÀÇ ÇöÀç ÀÎ¼ö °¡°İÀº "
+													System.out.println("\t\t" + "ì´ ì§€ì—­ì˜ í˜„ì¬ ì¸ìˆ˜ ê°€ê²©ì€ "
 															+ land.get(user.DiceWhere()).getInterceptPrice3()
-															+ "¾ï ÀÔ´Ï´Ù");
+															+ "ì–µ ì…ë‹ˆë‹¤");
 													timeLate(300);
-													System.out.print("\t\t" + "[ ÀÎ¼ö ÇÏ½Ã°Ú½À´Ï±î? Y / N ] >> ");
+													System.out.print("\t\t" + "[ ì¸ìˆ˜ í•˜ì‹œê² ìŠµë‹ˆê¹Œ? Y / N ] >> ");
 													String choiceLand = sc.next();
 													if (choiceLand.equals("Y") || choiceLand.equals("y")) {
 														op.userInterceptPrice3(user, pc, land.get(user.DiceWhere()));
-														System.out.println("\t\t" + "ÀÎ¼ö¸¦ ¼±ÅÃÇÏ¼Ì½À´Ï´Ù");
+														System.out.println("\t\t" + "ì¸ìˆ˜ë¥¼ ì„ íƒí•˜ì…¨ìŠµë‹ˆë‹¤");
 														timeLate(300);
 														land.get(user.DiceWhere()).setLandOwner(1);
 														user.Money();
 														timeLate(300);
-														System.out.println("\t\t" + nick + "´Ô ÅÏÀ» Á¾·áÇÕ´Ï´Ù");
+														System.out.println("\t\t" + nick + "ë‹˜ í„´ì„ ì¢…ë£Œí•©ë‹ˆë‹¤");
 														timeLate(300);
 														break;
 													} else if (choiceLand.equals("N") || choiceLand.equals("n")) {
-														System.out.println("\t\t" + nick + "´Ô ÅÏÀ» Á¾·áÇÕ´Ï´Ù");
+														System.out.println("\t\t" + nick + "ë‹˜ í„´ì„ ì¢…ë£Œí•©ë‹ˆë‹¤");
 														timeLate(300);
 														break;
 													} else {
-														System.out.println("\t\t" + "´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä");
+														System.out.println("\t\t" + "ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”");
 													}
 												}
 												break;
@@ -647,38 +662,38 @@ public class LandMemberMain {
 							} else {
 								turnCnt++;
 								while (true) {
-									// ÈÄÇÃ·¹ÀÌ¾î
+									// í›„í”Œë ˆì´ì–´
 									System.out.println();
-									System.out.println("\t\t" + "PBK ÅÏÀÔ´Ï´Ù.");
-									System.out.print("\t\t" + "¾Æ¹« Å°³ª ÀÔ·ÂÇÏ½Ã¸é PBKÅÏÀ» ÁøÇàÇÕ´Ï´Ù");
+									System.out.println("\t\t" + "PBK í„´ì…ë‹ˆë‹¤.");
+									System.out.print("\t\t" + "ì•„ë¬´ í‚¤ë‚˜ ì…ë ¥í•˜ì‹œë©´ PBKí„´ì„ ì§„í–‰í•©ë‹ˆë‹¤");
 									String pbkTurn = sc.next();
 
-									// ¹«ÀÎµµ ÆĞÅÏ
+									// ë¬´ì¸ë„ íŒ¨í„´
 									if (pcIsland > 0) {
 										int islandDice1 = rd.nextInt(6) + 1;
 										int islandDice2 = rd.nextInt(6) + 1;
-										System.out.println("\t\t" + "Ã¹¹øÂ° ÁÖ»çÀ§ : " + islandDice1);
-										System.out.println("\t\t" + "µÎ¹øÂ° ÁÖ»çÀ§ : " + islandDice2);
+										System.out.println("\t\t" + "ì²«ë²ˆì§¸ ì£¼ì‚¬ìœ„ : " + islandDice1);
+										System.out.println("\t\t" + "ë‘ë²ˆì§¸ ì£¼ì‚¬ìœ„ : " + islandDice2);
 										if (islandDice1 == islandDice2) {
-											System.out.println("\t\t" + "PBK°¡ Åğ¿øÇß½À´Ï´Ù");
+											System.out.println("\t\t" + "PBKê°€ í‡´ì›í–ˆìŠµë‹ˆë‹¤");
 											pcIsland = 0;
 											break;
 										} else {
-											System.out.println("\t\t" + "PBKÀÇ °Ë»ç °á°ú°¡ ´Ê¾îÁö°í ÀÖ½À´Ï´Ù...");
-											System.out.println("\t\t" + "PBK°¡ º´¿ø¹äÀ» ¸Ô½À´Ï´Ù ¤Ğ¤Ğ");
+											System.out.println("\t\t" + "PBKì˜ ê²€ì‚¬ ê²°ê³¼ê°€ ëŠ¦ì–´ì§€ê³  ìˆìŠµë‹ˆë‹¤...");
+											System.out.println("\t\t" + "PBKê°€ ë³‘ì›ë°¥ì„ ë¨¹ìŠµë‹ˆë‹¤ ã… ã… ");
 											pcIsland--;
-											System.out.println("\t\t" + "PBKÀÇ ³²Àº ÀÔ¿ø ÀÏ¼ö : " + pcIsland);
+											System.out.println("\t\t" + "PBKì˜ ë‚¨ì€ ì…ì› ì¼ìˆ˜ : " + pcIsland);
 											break;
 										}
 									}
-									// ¿ìÁÖ¿©Çà
+									// ìš°ì£¼ì—¬í–‰
 									if (pcSpace > 0) {
 										while (pcSpace > 0) {
-											System.out.println("\t\t" + "PBK°¡ ÀÌµ¿ÇÒ Ä­ ¼ö");
+											System.out.println("\t\t" + "PBKê°€ ì´ë™í•  ì¹¸ ìˆ˜");
 											int move = rd.nextInt(30) + 1;
 											System.out.println("\t\t" + move);
 											if (move >= 32 || move <= 0) {
-												System.out.println("\t\t" + "´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+												System.out.println("\t\t" + "ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 											} else {
 												pc.space(move);
 												pcSpace = 0;
@@ -691,126 +706,126 @@ public class LandMemberMain {
 										pc.DiceWhere();
 										out.outPrint(user.diceWhere, pc.diceWhere, land);
 									}
-									// º¸³Ê½º
+									// ë³´ë„ˆìŠ¤
 									if (pc.DiceWhere() == 4 || pc.DiceWhere() == 13 || pc.DiceWhere() == 22
 											|| pc.DiceWhere() == 27) {
-										System.out.println("\t\t" + "PBK°¡ º¸³Ê½ºÄ­¿¡ µµÂøÇß½À´Ï´Ù");
+										System.out.println("\t\t" + "PBKê°€ ë³´ë„ˆìŠ¤ì¹¸ì— ë„ì°©í–ˆìŠµë‹ˆë‹¤");
 										int bonus = rd.nextInt(6) + 1;
 										System.out.println("\t\t" + bonus);
 										op.bonus(pc, bonus);
 										pc.Money();
 										break;
 									} else if (pc.DiceWhere() % 8 == 0) {
-										// °¢ Æ¯¼öÁö±¸º° È¿°ú È£Ãâ
+										// ê° íŠ¹ìˆ˜ì§€êµ¬ë³„ íš¨ê³¼ í˜¸ì¶œ
 										if (pc.DiceWhere() / 8 == 0 || pc.DiceWhere() / 8 == 4) {
-											// Ãâ¹ß
-											System.out.println("\t\t" + "PBK°¡ Ãâ¹ßÁöÁ¡¿¡ µµÂøÇß½À´Ï´Ù");
+											// ì¶œë°œ
+											System.out.println("\t\t" + "PBKê°€ ì¶œë°œì§€ì ì— ë„ì°©í–ˆìŠµë‹ˆë‹¤");
 											break;
 										} else if (pc.DiceWhere() / 8 == 1) {
-											// ¹«ÀÎµµ - 2ÅÏ ½¬±â
-											System.out.println("\t\t" + "PBK°¡ ÄÚ·Î³ª°¡ ÀÇ½ÉµÇ¾î º´¿ø¿¡ ÀÔ¿øÇß½À´Ï´Ù");
+											// ë¬´ì¸ë„ - 2í„´ ì‰¬ê¸°
+											System.out.println("\t\t" + "PBKê°€ ì½”ë¡œë‚˜ê°€ ì˜ì‹¬ë˜ì–´ ë³‘ì›ì— ì…ì›í–ˆìŠµë‹ˆë‹¤");
 											pcIsland = 2;
 											break;
 										} else if (pc.DiceWhere() / 8 == 2) {
-											// »çÈ¸ º¹Áö±â±İ - ÀÚÃ¼ Ä«¿îÅÍ¿¡ µû¶ó¼­
-											System.out.println("\t\t" + "PBK°¡ ¼¼¹«¼­¿¡ µµÂøÇß½À´Ï´Ù");
+											// ì‚¬íšŒ ë³µì§€ê¸°ê¸ˆ - ìì²´ ì¹´ìš´í„°ì— ë”°ë¼ì„œ
+											System.out.println("\t\t" + "PBKê°€ ì„¸ë¬´ì„œì— ë„ì°©í–ˆìŠµë‹ˆë‹¤");
 											op.sw(pc, sw);
 											pc.Money();
 											break;
 										} else if (pc.DiceWhere() / 8 == 3) {
-											// ¿ìÁÖ¿©Çà - ¿øÇÏ´Â°÷ À§Ä¡
-											System.out.println("\t\t" + "PBK°¡ Å©·çÁî¿¡ Å¾½ÂÇÏ¿´½À´Ï´Ù");
+											// ìš°ì£¼ì—¬í–‰ - ì›í•˜ëŠ”ê³³ ìœ„ì¹˜
+											System.out.println("\t\t" + "PBKê°€ í¬ë£¨ì¦ˆì— íƒ‘ìŠ¹í•˜ì˜€ìŠµë‹ˆë‹¤");
 											pcSpace = 1;
 											break;
 										}
 
 									} else {
-										// pcÀ§Ä¡
-										System.out.println("\t\t" + "PBK°¡ " + land.get(pc.DiceWhere()).getLandName()
-												+ "¿¡ µµÂø ÇÏ¿´½À´Ï´Ù ");
+										// pcìœ„ì¹˜
+										System.out.println("\t\t" + "PBKê°€ " + land.get(pc.DiceWhere()).getLandName()
+												+ "ì— ë„ì°© í•˜ì˜€ìŠµë‹ˆë‹¤ ");
 										if (land.get(pc.DiceWhere()).getLandOwner() == 0) {
-											// ¶¥±¸ÀÔ Cnt++
-											System.out.println("\t\t" + "ÇöÀç ¼ÒÀ¯ÀÚ°¡ ¾ø´Â ¶¥ÀÔ´Ï´Ù.");
-											System.out.println("\t\t" + "PBK°¡ ¶¥À» ±¸ÀÔÇÒÁö °áÁ¤ÁßÀÔ´Ï´Ù.");
+											// ë•…êµ¬ì… Cnt++
+											System.out.println("\t\t" + "í˜„ì¬ ì†Œìœ ìê°€ ì—†ëŠ” ë•…ì…ë‹ˆë‹¤.");
+											System.out.println("\t\t" + "PBKê°€ ë•…ì„ êµ¬ì…í• ì§€ ê²°ì •ì¤‘ì…ë‹ˆë‹¤.");
 											op.pcLandBuy(pc, land.get(pc.DiceWhere()));
-											System.out.println("\t\t" + "PBK°¡ ¶¥À» ±¸ÀÔÇß½À´Ï´Ù");
+											System.out.println("\t\t" + "PBKê°€ ë•…ì„ êµ¬ì…í–ˆìŠµë‹ˆë‹¤");
 											pc.Money();
-											System.out.println("\t\t" + "PBKÅÏÀ» Á¾·áÇÕ´Ï´Ù");
+											System.out.println("\t\t" + "PBKí„´ì„ ì¢…ë£Œí•©ë‹ˆë‹¤");
 											land.get(pc.DiceWhere()).setLandOwner(2);
 											land.get(pc.DiceWhere()).setLandCnt(1);
 											break;
 										} else if (land.get(pc.DiceWhere()).getLandOwner() == 1) {
-											// ÇÃ·¹ÀÌ¾î¶¥
+											// í”Œë ˆì´ì–´ë•…
 											if (land.get(pc.DiceWhere()).getLandCnt() == 1) {
-												// ¶¥¸¸ ÀÖÀ½, ÅëÇà·á, ÀÎ¼ö
+												// ë•…ë§Œ ìˆìŒ, í†µí–‰ë£Œ, ì¸ìˆ˜
 												op.pcPass(pc, user, land.get(pc.DiceWhere()));
 												pc.Money();
 												int intercept = rd.nextInt(2);
 												if (intercept == 0) {
 													op.pcInterceptPrice(user, pc, land.get(pc.DiceWhere()));
 													land.get(pc.DiceWhere()).setLandOwner(2);
-													System.out.println("\t\t" + "PBK°¡ ¶¥À» ÀÎ¼öÇß½À´Ï´Ù");
+													System.out.println("\t\t" + "PBKê°€ ë•…ì„ ì¸ìˆ˜í–ˆìŠµë‹ˆë‹¤");
 													pc.Money();
-													System.out.println("\t\t" + "PBKÅÏÀ» Á¾·áÇÕ´Ï´Ù");
+													System.out.println("\t\t" + "PBKí„´ì„ ì¢…ë£Œí•©ë‹ˆë‹¤");
 													break;
 												} else {
-													System.out.println("\t\t" + "PBK°¡ ÀÎ¼öÇÏÁö¾Ê°í ÅÏÀ» Á¾·áÇß½À´Ï´Ù");
+													System.out.println("\t\t" + "PBKê°€ ì¸ìˆ˜í•˜ì§€ì•Šê³  í„´ì„ ì¢…ë£Œí–ˆìŠµë‹ˆë‹¤");
 													break;
 												}
 											} else if (land.get(pc.DiceWhere()).getLandCnt() == 2) {
-												// ºôµù±îÁö ÀÖÀ½, ÅëÇà·á, ÀÎ¼ö
+												// ë¹Œë”©ê¹Œì§€ ìˆìŒ, í†µí–‰ë£Œ, ì¸ìˆ˜
 												op.pcPassBuilding(pc, user, land.get(pc.DiceWhere()));
 												pc.Money();
 												int intercept = rd.nextInt(2);
 												if (intercept == 0) {
 													op.pcInterceptPrice2(user, pc, land.get(pc.DiceWhere()));
 													land.get(pc.DiceWhere()).setLandOwner(2);
-													System.out.println("\t\t" + "PBK°¡ ¶¥À» ÀÎ¼öÇß½À´Ï´Ù");
+													System.out.println("\t\t" + "PBKê°€ ë•…ì„ ì¸ìˆ˜í–ˆìŠµë‹ˆë‹¤");
 													pc.Money();
-													System.out.println("\t\t" + "PBKÅÏÀ» Á¾·áÇÕ´Ï´Ù");
+													System.out.println("\t\t" + "PBKí„´ì„ ì¢…ë£Œí•©ë‹ˆë‹¤");
 													break;
 												} else {
-													System.out.println("\t\t" + "PBK°¡ ÀÎ¼öÇÏÁö¾Ê°í ÅÏÀ» Á¾·áÇß½À´Ï´Ù");
+													System.out.println("\t\t" + "PBKê°€ ì¸ìˆ˜í•˜ì§€ì•Šê³  í„´ì„ ì¢…ë£Œí–ˆìŠµë‹ˆë‹¤");
 													break;
 												}
 											} else {
-												// È£ÅÚ±îÁö ÀÖÀ½, ÅëÇà·á, ÀÎ¼ö
+												// í˜¸í…”ê¹Œì§€ ìˆìŒ, í†µí–‰ë£Œ, ì¸ìˆ˜
 												op.pcPassHotel(pc, user, land.get(pc.DiceWhere()));
 												pc.Money();
 												int intercept = rd.nextInt(2);
 												if (intercept == 0) {
 													op.pcInterceptPrice3(user, pc, land.get(pc.DiceWhere()));
 													land.get(pc.DiceWhere()).setLandOwner(2);
-													System.out.println("\t\t" + "PBK°¡ ¶¥À» ÀÎ¼öÇß½À´Ï´Ù");
+													System.out.println("\t\t" + "PBKê°€ ë•…ì„ ì¸ìˆ˜í–ˆìŠµë‹ˆë‹¤");
 													pc.Money();
-													System.out.println("\t\t" + "PBKÅÏÀ» Á¾·áÇÕ´Ï´Ù");
+													System.out.println("\t\t" + "PBKí„´ì„ ì¢…ë£Œí•©ë‹ˆë‹¤");
 													break;
 												} else {
-													System.out.println("\t\t" + "PBK°¡ ÀÎ¼öÇÏÁö¾Ê°í ÅÏÀ» Á¾·áÇß½À´Ï´Ù");
+													System.out.println("\t\t" + "PBKê°€ ì¸ìˆ˜í•˜ì§€ì•Šê³  í„´ì„ ì¢…ë£Œí–ˆìŠµë‹ˆë‹¤");
 													break;
 												}
 											}
 										} else if (land.get(pc.DiceWhere()).getLandOwner() == 2) {
-											// PC¶¥
+											// PCë•…
 											if (land.get(pc.DiceWhere()).getLandCnt() == 1) {
-												// ºôµù±¸ÀÔ, Ä«¿îÅÍº¯°æ
-												System.out.println("\t\t" + "PBK°¡ ºôµùÀ» ±¸ÀÔÇß½À´Ï´Ù");
+												// ë¹Œë”©êµ¬ì…, ì¹´ìš´í„°ë³€ê²½
+												System.out.println("\t\t" + "PBKê°€ ë¹Œë”©ì„ êµ¬ì…í–ˆìŠµë‹ˆë‹¤");
 												op.pcBuildingBuy(pc, land.get(pc.DiceWhere()));
 												land.get(pc.DiceWhere()).setLandCnt(2);
 												pc.Money();
-												System.out.println("\t\t" + "PBKÅÏÀ» Á¾·áÇÕ´Ï´Ù");
+												System.out.println("\t\t" + "PBKí„´ì„ ì¢…ë£Œí•©ë‹ˆë‹¤");
 												break;
 											} else if (land.get(pc.DiceWhere()).getLandCnt() == 2) {
-												// È£ÅÚ±¸ÀÔ, Ä«¿îÅÍº¯°æ
-												System.out.println("\t\t" + "PBK°¡ È£ÅÚÀ» ±¸ÀÔÇß½À´Ï´Ù");
+												// í˜¸í…”êµ¬ì…, ì¹´ìš´í„°ë³€ê²½
+												System.out.println("\t\t" + "PBKê°€ í˜¸í…”ì„ êµ¬ì…í–ˆìŠµë‹ˆë‹¤");
 												op.pcHotelBuy(pc, land.get(pc.DiceWhere()));
 												land.get(pc.DiceWhere()).setLandCnt(3);
 												pc.Money();
-												System.out.println("\t\t" + "PBKÅÏÀ» Á¾·áÇÕ´Ï´Ù");
+												System.out.println("\t\t" + "PBKí„´ì„ ì¢…ë£Œí•©ë‹ˆë‹¤");
 												break;
 											} else {
-												System.out.println("\t\t" + "PBK°¡ ±¸ÀÔÇÒ °Ç¹°ÀÌ ¾ø½À´Ï´Ù");
-												System.out.println("\t\t" + "PBKÅÏÀ» Á¾·áÇÕ´Ï´Ù");
+												System.out.println("\t\t" + "PBKê°€ êµ¬ì…í•  ê±´ë¬¼ì´ ì—†ìŠµë‹ˆë‹¤");
+												System.out.println("\t\t" + "PBKí„´ì„ ì¢…ë£Œí•©ë‹ˆë‹¤");
 											}
 										}
 
@@ -821,64 +836,64 @@ public class LandMemberMain {
 						if (user.getUserMoney() < 0 && pc.getPcMoney() > 0)
 
 						{
-							System.out.println("\t\t" + "°ÔÀÓ¿¡¼­ ÆĞ¹èÇÏ¼Ì½À´Ï´Ù...");
-							System.out.println("\t\t" + "°ÔÀÓÀ» Á¾·áÇÕ´Ï´Ù");
+							System.out.println("\t\t" + "ê²Œì„ì—ì„œ íŒ¨ë°°í•˜ì…¨ìŠµë‹ˆë‹¤...");
+							System.out.println("\t\t" + "ê²Œì„ì„ ì¢…ë£Œí•©ë‹ˆë‹¤");
 							break;
 						}
 						if (pc.getPcMoney() < 0 && user.getUserMoney() > 0) {
-							System.out.println("\t\t" + "°ÔÀÓ¿¡¼­ ½Â¸®ÇÏ¼Ì½À´Ï´Ù~!!");
-							System.out.println("\t\t" + "°ÔÀÓÀ» Á¾·áÇÕ´Ï´Ù");
+							System.out.println("\t\t" + "ê²Œì„ì—ì„œ ìŠ¹ë¦¬í•˜ì…¨ìŠµë‹ˆë‹¤~!!");
+							System.out.println("\t\t" + "ê²Œì„ì„ ì¢…ë£Œí•©ë‹ˆë‹¤");
 							break;
 						}
 
 					}
 					while (id.equals("admin")) {
 						if (id.equals("admin")) {
-							System.out.println("\t\t" + " <<< °ü¸®ÀÚ ¸ğµå >>>");
-							System.out.println("\t\t" + "1. È¸¿øÁ¤º¸¼öÁ¤ 2. È¸¿ø»èÁ¦ 3. ÀüÃ¼È¸¿øIDº¸±â 4. °ü¸®ÀÚ ·Î±×¾Æ¿ô");
-							System.out.print("\t\t" + "¼ıÀÚÀÔ·Â >> ");
+							System.out.println("\t\t" + " <<< ê´€ë¦¬ì ëª¨ë“œ >>>");
+							System.out.println("\t\t" + "1. íšŒì›ì •ë³´ìˆ˜ì • 2. íšŒì›ì‚­ì œ 3. ì „ì²´íšŒì›IDë³´ê¸° 4. ê´€ë¦¬ì ë¡œê·¸ì•„ì›ƒ");
+							System.out.print("\t\t" + "ìˆ«ìì…ë ¥ >> ");
 							menu = sc.nextInt();
 							if (menu == 1) {
-								System.out.println("\t\t" + " <<< °ü¸®ÀÚ È¸¿øÁ¤º¸¼öÁ¤ >>>");
-								System.out.print("\t\t" + "¾ÆÀÌµğ ÀÔ·Â : ");
+								System.out.println("\t\t" + " <<< ê´€ë¦¬ì íšŒì›ì •ë³´ìˆ˜ì • >>>");
+								System.out.print("\t\t" + "ì•„ì´ë”” ì…ë ¥ : ");
 								String change_id = sc.next();
-								System.out.print("\t\t" + "º¯°æÇÒ ´Ğ³×ÀÓ ÀÔ·Â : ");
+								System.out.print("\t\t" + "ë³€ê²½í•  ë‹‰ë„¤ì„ ì…ë ¥ : ");
 								String change_nick = sc.next();
 
 								int cnt = dao2.adminUpdate(change_id, change_nick);
 
 								if (cnt > 0) {
-									System.out.println("\t\t" + change_nick + "À¸·Î È¸¿øÁ¤º¸ ¼öÁ¤ ¿Ï·á!!!");
+									System.out.println("\t\t" + change_nick + "ìœ¼ë¡œ íšŒì›ì •ë³´ ìˆ˜ì • ì™„ë£Œ!!!");
 								} else {
-									System.out.println("\t\t" + "È¸¿øÁ¤º¸ ¼öÁ¤ ½ÇÆĞ...");
+									System.out.println("\t\t" + "íšŒì›ì •ë³´ ìˆ˜ì • ì‹¤íŒ¨...");
 								}
 							} else if (menu == 2) {
 
-								System.out.println("\t\t" + "<<< È¸¿ø»èÁ¦ >>>");
-								System.out.println("\t\t" + "»èÁ¦ÇÒ È¸¿øÀ» ¼±ÅÃÇÕ´Ï´Ù.");
+								System.out.println("\t\t" + "<<< íšŒì›ì‚­ì œ >>>");
+								System.out.println("\t\t" + "ì‚­ì œí•  íšŒì›ì„ ì„ íƒí•©ë‹ˆë‹¤.");
 								System.out.print("\t\t" + "ID : ");
 								String removeId = sc.next();
 
 								if (dao2.check(removeId)) {
 
-									System.out.print("\t\t" + "[" + nick + "È¸¿øÀ» ÁøÂ¥ Å»Åğ¸¦ ½ÃÅ°½Ã°Ú½À´Ï±î? ] Y/N");
+									System.out.print("\t\t" + "[" + nick + "íšŒì›ì„ ì§„ì§œ íƒˆí‡´ë¥¼ ì‹œí‚¤ì‹œê² ìŠµë‹ˆê¹Œ? ] Y/N");
 									String yn = sc.next();
 
 									if (yn.equals("y") || yn.equals("Y")) {
 										int cnt = dao2.deleteId(removeId);
 										if (cnt > 0) {
-											System.out.println("\t\t" + "È¸¿ø»èÁ¦ ¿Ï·á!!!");
+											System.out.println("\t\t" + "íšŒì›ì‚­ì œ ì™„ë£Œ!!!");
 										}
 									} else if (yn.equals("n") || yn.equals("N")) {
-										System.out.println("\t\t" + "Ã³À½ºÎÅÍ ´Ù½Ã ½ÃÀÛÇÕ´Ï´Ù.");
+										System.out.println("\t\t" + "ì²˜ìŒë¶€í„° ë‹¤ì‹œ ì‹œì‘í•©ë‹ˆë‹¤.");
 									} else {
-										System.out.println("\t\t" + "Àß¸ø ÀÔ·ÂÇß½À´Ï´Ù.");
+										System.out.println("\t\t" + "ì˜ëª» ì…ë ¥í–ˆìŠµë‹ˆë‹¤.");
 									}
 								} else {
-									System.out.println("\t\t" + "È¸¿øÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.");
+									System.out.println("\t\t" + "íšŒì›ì´ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 								}
 							} else if (menu == 3) {
-								System.out.println("\t\t" + " <<< ÀüÃ¼È¸¿ø Á¤º¸º¸±â >>>");
+								System.out.println("\t\t" + " <<< ì „ì²´íšŒì› ì •ë³´ë³´ê¸° >>>");
 								System.out.println("\t\t ID\tPW");
 								ArrayList<LandMemberDTO> list = dao2.selectAll();
 
@@ -891,41 +906,41 @@ public class LandMemberMain {
 									}
 								}
 							} else if (menu == 4) {
-								System.out.println("\t\t" + "<<< °ü¸®ÀÚ ¸ğµå Á¾·á >>>");
+								System.out.println("\t\t" + "<<< ê´€ë¦¬ì ëª¨ë“œ ì¢…ë£Œ >>>");
 								break;
 							} else {
-								System.out.println("\t\t" + "´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+								System.out.println("\t\t" + "ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 							}
 							System.out.println();
 						}
 					}
 
 				} else {
-					System.out.println("\t\t" + "·Î±×ÀÎ ½ÇÆĞ...");
+					System.out.println("\t\t" + "ë¡œê·¸ì¸ ì‹¤íŒ¨...");
 				}
 
 			} else if (menu == 2) {
-				System.out.println("\t\t" + " <<< È¸¿ø°¡ÀÔ >>>");
-				System.out.print("\t\t" + "¾ÆÀÌµğ ÀÔ·Â :");
+				System.out.println("\t\t" + " <<< íšŒì›ê°€ì… >>>");
+				System.out.print("\t\t" + "ì•„ì´ë”” ì…ë ¥ :");
 				String id = sc.next();
-				System.out.print("\t\t" + "ºñ¹Ğ¹øÈ£¸¦ ÀÔ·Â :");
+				System.out.print("\t\t" + "ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥ :");
 				String pw = sc.next();
-				System.out.print("\t\t" + "´Ğ³×ÀÓ ÀÔ·Â :");
+				System.out.print("\t\t" + "ë‹‰ë„¤ì„ ì…ë ¥ :");
 				String nick = sc.next();
 				int cnt = dao2.join(id, pw, nick);
 
 				if (cnt > 0) {
-					System.out.println("\t\t" + "È¸¿ø°¡ÀÔ ¼º°ø");
+					System.out.println("\t\t" + "íšŒì›ê°€ì… ì„±ê³µ");
 				} else {
-					System.out.println("\t\t" + "È¸¿ø°¡ÀÔ ½ÇÆĞ");
+					System.out.println("\t\t" + "íšŒì›ê°€ì… ì‹¤íŒ¨");
 				}
 
 			} else if (menu == 3) {
-				// È¸¿ø ¸ñ·Ï º¸±â
-				System.out.println("\t\t" + " <<< È¸¿ø¸ñ·Ïº¸±â >>>");
+				// íšŒì› ëª©ë¡ ë³´ê¸°
+				System.out.println("\t\t" + " <<< íšŒì›ëª©ë¡ë³´ê¸° >>>");
 				ArrayList<LandMemberDTO> list = dao2.selectAll();
 				System.out.println("\t\t ID\tNick");
-				// pbk - 1234 - È£µÎ¾Æºü
+				// pbk - 1234 - í˜¸ë‘ì•„ë¹ 
 				int listNum = 1;
 				for (int i = 0; i < list.size(); i++) {
 					LandMemberDTO m = list.get(i);
@@ -936,48 +951,48 @@ public class LandMemberMain {
 				}
 
 			} else if (menu == 4) {
-				System.out.println("\t\t" + "<<< È¸¿øÁ¤º¸¼öÁ¤ >>>");
-				System.out.println("\t\t" + "È¸¿øÁ¤º¸¸¦ È®ÀÎÇÕ´Ï´Ù.");
+				System.out.println("\t\t" + "<<< íšŒì›ì •ë³´ìˆ˜ì • >>>");
+				System.out.println("\t\t" + "íšŒì›ì •ë³´ë¥¼ í™•ì¸í•©ë‹ˆë‹¤.");
 				System.out.print("\t\t" + "ID : ");
 				String id = sc.next();
 				System.out.print("\t\t" + "PASSWORD : ");
 				String pw = sc.next();
 				String nick = dao2.login(id, pw);
-				System.out.println("\t\t" + nick + "´Ô È¸¿øÁ¤º¸°¡ ÀÏÄ¡ÇÕ´Ï´Ù. È¸¿øÁ¤º¸ º¯°æÇÏ¼¼¿ä.");
+				System.out.println("\t\t" + nick + "ë‹˜ íšŒì›ì •ë³´ê°€ ì¼ì¹˜í•©ë‹ˆë‹¤. íšŒì›ì •ë³´ ë³€ê²½í•˜ì„¸ìš”.");
 
-				System.out.print("\t\t" + "º¯°æÇÒ NICKNAME : ");
+				System.out.print("\t\t" + "ë³€ê²½í•  NICKNAME : ");
 				String new_nick = sc.next();
 
-				System.out.print("\t\t" + "º¯°æÇÒ PASSWORD : ");
+				System.out.print("\t\t" + "ë³€ê²½í•  PASSWORD : ");
 				String new_pw = sc.next();
 
 				int cnt = dao2.update(id, pw, new_nick, new_pw);
 
 				if (cnt > 0) {
-					System.out.println("\t\t" + "È¸¿øÁ¤º¸ ¼öÁ¤ ¼º°ø!!!");
+					System.out.println("\t\t" + "íšŒì›ì •ë³´ ìˆ˜ì • ì„±ê³µ!!!");
 				} else {
-					System.out.println("\t\t" + "È¸¿øÁ¤º¸ ¼öÁ¤ ½ÇÆĞ...");
+					System.out.println("\t\t" + "íšŒì›ì •ë³´ ìˆ˜ì • ì‹¤íŒ¨...");
 				}
 
 			} else if (menu == 5) {
-				// È¸¿ø Å»Åğ
-				System.out.println("\t\t" + "<<< È¸¿øÅ»Åğ >>>");
-				System.out.print("\t\t" + "¾ÆÀÌµğ ÀÔ·Â  : ");
+				// íšŒì› íƒˆí‡´
+				System.out.println("\t\t" + "<<< íšŒì›íƒˆí‡´ >>>");
+				System.out.print("\t\t" + "ì•„ì´ë”” ì…ë ¥  : ");
 				String id = sc.next();
-				System.out.print("\t\t" + "ºñ¹Ğ¹øÈ£ ÀÔ·Â : ");
+				System.out.print("\t\t" + "ë¹„ë°€ë²ˆí˜¸ ì…ë ¥ : ");
 				String pw = sc.next();
 				int cnt = dao2.delete(id, pw);
 
 				if (cnt > 0) {
-					System.out.println("\t\t" + "È¸¿ø»èÁ¦ ¿Ï·á");
+					System.out.println("\t\t" + "íšŒì›ì‚­ì œ ì™„ë£Œ");
 				} else {
-					System.out.println("\t\t" + "È¸¿ø»èÁ¦ ½ÇÆĞ");
+					System.out.println("\t\t" + "íšŒì›ì‚­ì œ ì‹¤íŒ¨");
 				}
 			} else if (menu == 6) {
-				System.out.println("\t\t" + "ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù...");
+				System.out.println("\t\t" + "í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤...");
 				break;
 			} else {
-				System.out.println("\t\t" + "Á¤È®ÇÑ ¼ıÀÚ¸¦ ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+				System.out.println("\t\t" + "ì •í™•í•œ ìˆ«ìë¥¼ ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 			}
 		}
 
